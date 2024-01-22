@@ -1,0 +1,70 @@
+body {
+    font-family: 'lato', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col {
+    text-align: center;
+}
+
+.table {
+    padding: 20px 75px;
+}
+
+.table__card {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.tile {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px 25px;
+    justify-content: center;
+}
+
+.table__card_tile {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.btn {
+    border: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.btn__list {
+    background: url(../images/list.svg);
+    background-size: cover;
+    top: 50px;
+    left: 10px;
+}
+
+.btn__tile {
+    background: url(../images/title.svg);
+    background-size: cover;
+    top: 50px;
+    left: 40px;
+}
+
+.btn_active {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.btn_active:hover {
+    opacity: 1;
+}
